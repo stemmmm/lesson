@@ -14,6 +14,7 @@
 		7B18D50D282F805800480DFD /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B18D50C282F805800480DFD /* Lesson.swift */; };
 		7B18D50F282F808F00480DFD /* LessonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B18D50E282F808F00480DFD /* LessonData.swift */; };
 		7B18D511282F85A800480DFD /* LessonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B18D510282F85A800480DFD /* LessonDetailView.swift */; };
+		7B18D517282F87FF00480DFD /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B18D516282F87FF00480DFD /* AVKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		7B18D50C282F805800480DFD /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		7B18D50E282F808F00480DFD /* LessonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonData.swift; sourceTree = "<group>"; };
 		7B18D510282F85A800480DFD /* LessonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonDetailView.swift; sourceTree = "<group>"; };
+		7B18D516282F87FF00480DFD /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B18D517282F87FF00480DFD /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +46,7 @@
 			children = (
 				7B18D4FD282F7FFA00480DFD /* Lesson */,
 				7B18D4FC282F7FFA00480DFD /* Products */,
+				7B18D515282F87FF00480DFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +102,14 @@
 				7B18D50E282F808F00480DFD /* LessonData.swift */,
 			);
 			path = "VIew Model";
+			sourceTree = "<group>";
+		};
+		7B18D515282F87FF00480DFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B18D516282F87FF00480DFD /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

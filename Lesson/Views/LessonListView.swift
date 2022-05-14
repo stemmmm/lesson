@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct LessonListView: View {
-    @EnvironmentObject var lesson: LessonData
+    @EnvironmentObject var lessonData: LessonData
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(lesson.lessons) { lesson in
+                ForEach(lessonData.lessons) { lesson in
                     NavigationLink {
                         LessonDetailView(lesson: lesson)
                     } label: {
