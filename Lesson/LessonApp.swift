@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct LessonApp: App {
+    @StateObject var lessonData = LessonData()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LessonListView()
+                .environmentObject(lessonData)
         }
     }
 }
