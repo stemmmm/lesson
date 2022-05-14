@@ -15,7 +15,7 @@ struct LessonListView: View {
             List {
                 ForEach(lesson.lessons) { lesson in
                     NavigationLink {
-                        
+                        LessonDetailView(lesson: lesson)
                     } label: {
                         Text(lesson.title)
                     }

@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct LessonDetailView: View {
+    var lesson: Lesson
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct LessonDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        LessonDetailView()
+        VStack {
+            Text(lesson.title)
+                .bold()
+                .font(.title)
+            
+            // Video
+        }
     }
 }
