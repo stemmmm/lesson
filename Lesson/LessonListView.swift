@@ -11,14 +11,20 @@ struct LessonListView: View {
     @EnvironmentObject var lesson: LessonData
     
     var body: some View {
-        ScrollView {
-            LazyVStack(alignment: .leading) {
+        NavigationView {
+            List {
                 ForEach(lesson.lessons) { lesson in
-                    Text(lesson.title)
-                        .padding()
+                    NavigationLink {
+                        
+                    } label: {
+                        Text(lesson.title)
+                    }
                 }
             }
+            .listStyle(.plain)
+            .navigationTitle("All Videos")
         }
+        .navigationViewStyle(.stack)
     }
 }
 
